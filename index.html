@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fady Eshak – Flutter Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="#hero">Fady <span>Eshak</span></a>
+    <ul class="nav-links">
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <div class="hero-ornament"></div>
+    <div class="hero-inner">
+
+      <!-- LEFT: Text Content -->
+      <div class="hero-content">
+        <div class="hero-greeting">Flutter Developer</div>
+        <h1 class="hero-name">
+          <span class="first">Fady</span>
+          <span class="last">Eshak</span>
+        </h1>
+        <p class="hero-role" id="heroRole">Flutter Developer <span>◆</span> CS Student <span>◆</span> Egypt</p>
+        <p class="hero-bio">
+          Motivated and detail-oriented Computer Science student at October 6 University, passionate about
+          cross-platform mobile development using Flutter. Experienced in building responsive, user-centric
+          apps with clean architecture and strong UI/UX principles.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn-gold">View Projects</a>
+          <a href="#contact" class="btn-ghost">Get In Touch</a>
+        </div>
+        <div class="hero-stats">
+          <div><div class="stat-num">3+</div><div class="stat-label">Apps Built</div></div>
+          <div><div class="stat-num">2+</div><div class="stat-label">Years Coding</div></div>
+          <div><div class="stat-num">3.0</div><div class="stat-label">GPA / 4.0</div></div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Profile Photo -->
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-ring"></div>
+        <div class="hero-photo-ring hero-photo-ring--2"></div>
+        <div class="hero-photo">
+          <!--
+            TO ADD YOUR PHOTO:
+            1. Save your image as "profile.jpg" (or .png)
+            2. Place it in the same folder as index.html
+            3. Replace the <div class="hero-photo-placeholder"> below with:
+               <img src="profile.jpg" alt="Fady Eshak" />
+          -->
+          <img src="images/profile.jpeg" alt="Fady Eshak" />
+        </div>
+        <div class="hero-photo-badge">
+          <span>◆</span> Available
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section id="skills">
+    <div class="section-wrap">
+      <div class="section-eyebrow reveal">Skills</div>
+      <h2 class="section-title reveal">Technical <span class="gold">Arsenal</span></h2>
+      <div class="skills-container">
+        <div>
+          <div class="skills-col-title reveal">Technical Skills</div>
+          <div class="skills-grid">
+            <div class="skill-chip reveal reveal-delay-1">Flutter</div>
+            <div class="skill-chip reveal reveal-delay-1">Dart</div>
+            <div class="skill-chip reveal reveal-delay-2">Firebase</div>
+            <div class="skill-chip reveal reveal-delay-2">Supabase</div>
+            <div class="skill-chip reveal reveal-delay-2">REST APIs</div>
+            <div class="skill-chip reveal reveal-delay-3">Git & GitHub</div>
+            <div class="skill-chip reveal reveal-delay-3">Hive / Sqflite</div>
+            <div class="skill-chip reveal reveal-delay-3">Provider</div>
+            <div class="skill-chip reveal reveal-delay-3">JSON</div>
+            <div class="skill-chip reveal reveal-delay-4">Figma</div>
+            <div class="skill-chip reveal reveal-delay-4">C++</div>
+            <div class="skill-chip reveal reveal-delay-4">Java & OOP</div>
+            <div class="skill-chip reveal reveal-delay-1">Data Structures</div>
+            <div class="skill-chip reveal reveal-delay-2">HTML & CSS</div>
+            <div class="skill-chip reveal reveal-delay-3">Problem Solving</div>
+          </div>
+        </div>
+        <div>
+          <div class="skills-col-title reveal">Soft Skills</div>
+          <div class="skills-grid">
+            <div class="soft-chip reveal reveal-delay-1">Teamwork</div>
+            <div class="soft-chip reveal reveal-delay-2">Communication</div>
+            <div class="soft-chip reveal reveal-delay-2">Time Management</div>
+            <div class="soft-chip reveal reveal-delay-3">Adaptability</div>
+            <div class="soft-chip reveal reveal-delay-3">Creativity</div>
+            <div class="soft-chip reveal reveal-delay-4">Lifelong Learning</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE ── -->
+  <section id="experience">
+    <div class="section-wrap">
+      <div class="section-eyebrow reveal">Experience</div>
+      <h2 class="section-title reveal">Work <span class="gold">History</span></h2>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="exp-header">
+            <div class="exp-company">Route IT Training Center — Egypt</div>
+            <div class="exp-date">Feb 2025</div>
+          </div>
+          <div class="exp-role">Flutter Intern</div>
+          <ul class="exp-bullets">
+            <li>Completed a professional diploma in Flutter mobile development.</li>
+            <li>Developed and deployed production-level apps: Islami App, To-Do App, News App, and Movies App.</li>
+            <li>Worked closely with fellow interns to implement shared components and conduct peer reviews.</li>
+            <li>Implemented local & cloud-based auth, storage, and notifications using Firebase and Supabase.</li>
+            <li>Applied clean architecture, async programming, and app localization for scalability and UX.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="exp-header">
+            <div class="exp-company">October 6 University — Egypt</div>
+            <div class="exp-date">2023 – 2024</div>
+          </div>
+          <div class="exp-role">Academic Projects — C++ & Java</div>
+          <ul class="exp-bullets">
+            <li>Developed console-based applications: Student Management System and Banking System.</li>
+            <li>Applied OOP principles: inheritance, polymorphism, and encapsulation.</li>
+            <li>Focused on writing clean, efficient code and strengthening problem-solving skills.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section id="projects">
+    <div class="section-wrap">
+      <div class="section-eyebrow reveal">Projects</div>
+      <h2 class="section-title reveal">Featured <span class="gold">Work</span></h2>
+      <div class="projects-grid">
+
+        <!-- Project 01: Blood Donation -->
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-head">
+            <div class="project-num">01</div>
+            <div class="project-links">
+              <a href="https://github.com/fadyeshak1/blood_donation" target="_blank" class="project-link">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57
+                  0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695
+                  -.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99
+                  .105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225
+                  -.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405
+                  c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225
+                  0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3
+                  0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-name">Blood Donation Platform</div>
+            <div class="project-category">Flutter · AI-Powered · Healthcare</div>
+            <div class="project-desc">
+              An intelligent digital ecosystem connecting donors, seekers, and hospitals. Features AI-driven
+              donor matching, real-time emergency alerts, QR verification, and a hospital management dashboard.
+            </div>
+            <ul class="project-features">
+              <li>AI-powered donor–seeker matching by blood type & location</li>
+              <li>QR Code system for secure donation verification</li>
+              <li>Reward points system to encourage regular donations</li>
+              <li>Hospital dashboard with inventory & AI demand prediction</li>
+              <li>Emergency notifications for nearby eligible donors</li>
+            </ul>
+          </div>
+          <div class="project-footer">
+            <span class="tag">Flutter</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">AI/ML</span>
+            <span class="tag">QR Code</span>
+            <span class="tag">Real-time</span>
+          </div>
+        </div>
+
+        <!-- Project 02: To-Do App -->
+        <div class="project-card reveal reveal-delay-2">
+          <div class="project-head">
+            <div class="project-num">02</div>
+            <div class="project-links">
+              <a href="https://github.com/fadyeshak1/todo_app" target="_blank" class="project-link">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57
+                  0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695
+                  -.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99
+                  .105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225
+                  -.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405
+                  c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225
+                  0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3
+                  0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-name">To-Do App</div>
+            <div class="project-category">Flutter · Firebase · Productivity</div>
+            <div class="project-desc">
+              A modern productivity app with full Firebase authentication, task management system,
+              dark/light mode, and English & Arabic localization for a seamless experience.
+            </div>
+            <ul class="project-features">
+              <li>Firebase authentication with email verification & onboarding</li>
+              <li>Full task CRUD: add, edit, delete, mark complete</li>
+              <li>Calendar date picker for task scheduling</li>
+              <li>Dark / Light mode + Arabic & English localization</li>
+              <li>Clean architecture with Provider state management</li>
+            </ul>
+          </div>
+          <div class="project-footer">
+            <span class="tag">Flutter</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">Provider</span>
+            <span class="tag">Localization</span>
+          </div>
+        </div>
+
+        <!-- Project 03: Metro Misr -->
+        <div class="project-card reveal reveal-delay-3">
+          <div class="project-head">
+            <div class="project-num">03</div>
+            <div class="project-links">
+              <a href="https://github.com/fadyeshak1/metro_misr" target="_blank" class="project-link">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57
+                  0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695
+                  -.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99
+                  .105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225
+                  -.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405
+                  c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225
+                  0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3
+                  0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-name">Metro Misr</div>
+            <div class="project-category">Flutter · GPS · Navigation</div>
+            <div class="project-desc">
+              A smart Cairo Metro navigation app helping commuters browse all metro lines, plan trips
+              between stations, and detect the nearest station via GPS for effortless daily commuting.
+            </div>
+            <ul class="project-features">
+              <li>All Cairo Metro lines and stations displayed accurately</li>
+              <li>Trip planning with station count & route calculation</li>
+              <li>Nearest metro station detection via GPS</li>
+              <li>Save favorite stations for quick access</li>
+              <li>Dark mode + lightweight, fast performance</li>
+            </ul>
+          </div>
+          <div class="project-footer">
+            <span class="tag">Flutter</span>
+            <span class="tag">GPS / Location</span>
+            <span class="tag">Custom UI</span>
+            <span class="tag">Dark Mode</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EDUCATION ── -->
+  <section id="education">
+    <div class="section-wrap">
+      <div class="section-eyebrow reveal">Education</div>
+      <h2 class="section-title reveal">Academic <span class="gold">Background</span></h2>
+      <div class="edu-grid">
+
+        <div class="edu-card reveal reveal-delay-1">
+          <span class="edu-icon">🎓</span>
+          <div class="edu-school">October 6 University (O6U)</div>
+          <div class="edu-degree">B.Sc. Computer Science & Info Systems · Sep 2022 – Jun 2026</div>
+          <div class="edu-detail">Specialization: Computer Networks, Routing & Switching, Network Automation, Cybersecurity</div>
+          <div class="edu-gpa">GPA: 3.0 / 4.0</div>
+          <div class="coursework">
+            <span class="course-tag">Mobile App Dev</span>
+            <span class="course-tag">OOP</span>
+            <span class="course-tag">Data Structures</span>
+            <span class="course-tag">Algorithms</span>
+            <span class="course-tag">DBMS</span>
+            <span class="course-tag">Software Eng.</span>
+            <span class="course-tag">OS</span>
+            <span class="course-tag">Java</span>
+            <span class="course-tag">C++</span>
+            <span class="course-tag">Firebase</span>
+            <span class="course-tag">HTML & CSS</span>
+          </div>
+        </div>
+
+        <div class="edu-card reveal reveal-delay-2">
+          <span class="edu-icon">📜</span>
+          <div class="edu-school">Route IT Training Center</div>
+          <div class="edu-degree">Flutter Mobile Development Diploma · Feb 2025</div>
+          <div class="edu-detail">
+            Professional diploma covering Flutter from fundamentals to production-level development.
+            Built and deployed multiple real-world apps with clean architecture, Firebase, Supabase,
+            and app localization.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact">
+    <div class="section-wrap">
+      <div class="section-eyebrow reveal">Contact</div>
+      <div class="contact-layout">
+        <div class="contact-left reveal">
+          <div class="big-text">Let's Build<br/><em>Together.</em></div>
+          <p>
+            I'm actively seeking Flutter developer roles and internship opportunities.
+            If you have a project, an open position, or just want to connect — I'd love to hear from you.
+          </p>
+          <a href="mailto:fadyeshak404@gmail.com" class="btn-gold">Send an Email</a>
+        </div>
+        <div class="contact-items reveal reveal-delay-2">
+          <a href="mailto:fadyeshak404@gmail.com" class="contact-item">
+            <div class="contact-icon">✉</div>
+            <div>
+              <div class="c-label">Email</div>
+              <div class="c-value">fadyeshak404@gmail.com</div>
+            </div>
+          </a>
+          <a href="tel:+201009138947" class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <div class="c-label">Phone</div>
+              <div class="c-value">+20 100 913 8947</div>
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/fady-eshak-054398311" target="_blank" class="contact-item">
+            <div class="contact-icon" style="font-weight:700; font-size:.9rem;">in</div>
+            <div>
+              <div class="c-label">LinkedIn</div>
+              <div class="c-value">fady-eshak-054398311</div>
+            </div>
+          </a>
+          <a href="https://github.com/fadyeshak1" target="_blank" class="contact-item">
+            <div class="contact-icon">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57
+                0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695
+                -.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99
+                .105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225
+                -.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405
+                c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225
+                0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3
+                0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="c-label">GitHub</div>
+              <div class="c-value">github.com/fadyeshak1</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-diamond">◆</span>
+      Designed & Built by Fady Eshak
+      <span class="footer-diamond">◆</span>
+      Flutter Developer · 2025
+      <span class="footer-diamond">◆</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
