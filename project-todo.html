@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do App – Fady Eshak</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="project.css"/>
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <nav class="project-nav">
+    <a href="index.html" class="back-btn">← Back to Portfolio</a>
+    <span class="project-nav-title">To-Do App</span>
+    <a href="https://github.com/fadyeshak1/todo_app" target="_blank" class="btn-ghost-sm">GitHub ↗</a>
+  </nav>
+
+  <div class="proj-hero">
+    <div class="proj-hero-left">
+      <div class="proj-num">02</div>
+      <div class="proj-eyebrow">Productivity · Flutter · Firebase</div>
+      <h1 class="proj-title">To-Do<em>App</em></h1>
+      <p class="proj-subtitle">
+        A modern productivity mobile app with full Firebase authentication, complete task management, dark/light mode, and English & Arabic localization for a seamless experience.
+      </p>
+      <div class="proj-tags">
+        <span class="tag">Flutter</span>
+        <span class="tag">Firebase Auth</span>
+        <span class="tag">Provider</span>
+        <span class="tag">Shared Prefs</span>
+        <span class="tag">Localization</span>
+        <span class="tag">Dart</span>
+      </div>
+      <div class="proj-hero-links">
+        <a href="https://github.com/fadyeshak1/todo_app" target="_blank" class="btn-gold">View on GitHub ↗</a>
+        <a href="index.html#projects" class="btn-ghost">← All Projects</a>
+      </div>
+    </div>
+
+    <div class="proj-hero-right">
+      <div class="phone-mockup-row">
+
+        <!-- Hero Phone 1: Splash -->
+        <div class="phone-frame" data-img="images/todo/splash.jpeg" data-label="Splash Screen">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <img src="images/todo/splash.jpeg" alt="Splash Screen"/>
+          </div>
+        </div>
+
+        <!-- Hero Phone 2 (main/center): Task List -->
+        <div class="phone-frame phone-main" data-img="images/todo/taskList.jpeg" data-label="Task List">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <img src="images/todo/taskList.jpeg" alt="Task List"/>
+          </div>
+        </div>
+
+        <!-- Hero Phone 3: Dark Mode -->
+        <div class="phone-frame" data-img="images/todo/darkmode.jpeg" data-label="Dark Mode">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <img src="images/todo/darkmode.jpeg" alt="Dark Mode"/>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="proj-stats-bar">
+    <div class="proj-stat"><div class="proj-stat-num">2</div><div class="proj-stat-label">Languages</div></div>
+    <div class="proj-stat"><div class="proj-stat-num">2</div><div class="proj-stat-label">Themes</div></div>
+    <div class="proj-stat"><div class="proj-stat-num">Firebase</div><div class="proj-stat-label">Backend</div></div>
+    <div class="proj-stat"><div class="proj-stat-num">Clean</div><div class="proj-stat-label">Architecture</div></div>
+  </div>
+
+  <main class="proj-main">
+    <div class="proj-content-wrap">
+
+      <!-- OVERVIEW -->
+      <section class="proj-section">
+        <div class="proj-section-label">Overview</div>
+        <h2 class="proj-section-title">About the <span class="gold">Project</span></h2>
+        <div class="proj-overview">
+          <div class="proj-overview-text">
+            <p>A complete task management app built with Flutter to help users organize their daily workflow. The app features a clean, intuitive interface with a full authentication system so each user has their own private task list synced with Firebase.</p>
+            <p>The app supports both English and Arabic with full RTL layout handling, making it accessible to a wide range of users. Dark and light mode settings are persisted locally so the user's preference is always remembered.</p>
+            <p>Built using clean architecture principles with Provider state management, separating UI from business logic and keeping the codebase modular and scalable.</p>
+          </div>
+          <div class="proj-overview-aside">
+            <div class="aside-card">
+              <div class="aside-card-title">Authentication</div>
+              <p>Full Firebase Auth flow with email verification, registration, login, and onboarding screens.</p>
+            </div>
+            <div class="aside-card">
+              <div class="aside-card-title">Localization</div>
+              <p>Complete English and Arabic support using Flutter's intl package with automatic RTL layout switching.</p>
+            </div>
+            <div class="aside-card">
+              <div class="aside-card-title">Architecture</div>
+              <p>Clean architecture with Provider for state management and Shared Preferences for persistent local settings.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SCREENSHOTS -->
+      <section class="proj-section">
+        <div class="proj-section-label">Screenshots</div>
+        <h2 class="proj-section-title">App <span class="gold">Screenshots</span></h2>
+        <div class="all-screenshots">
+
+          <!-- Screenshot 1: Splash -->
+          <div class="screenshot-item">
+            <div class="screenshot-frame" data-img="images/todo/splash.jpeg" data-label="Splash Screen">
+              <img src="images/todo/splash.jpeg" alt="Splash Screen"/>
+            </div>
+            <div class="screenshot-caption">Splash Screen</div>
+          </div>
+
+          <!-- Screenshot 2: Task List -->
+          <div class="screenshot-item">
+            <div class="screenshot-frame" data-img="images/todo/taskList.jpeg" data-label="Task List">
+              <img src="images/todo/taskList.jpeg" alt="Task List"/>
+            </div>
+            <div class="screenshot-caption">Task List</div>
+          </div>
+
+          <!-- Screenshot 3: Dark Mode -->
+          <div class="screenshot-item">
+            <div class="screenshot-frame" data-img="images/todo/darkmode.jpeg" data-label="Dark Mode">
+              <img src="images/todo/darkmode.jpeg" alt="Dark Mode"/>
+            </div>
+            <div class="screenshot-caption">Dark Mode</div>
+          </div>
+
+          <!-- Screenshot 4: Settings -->
+          <div class="screenshot-item">
+            <div class="screenshot-frame" data-img="images/todo/setting.jpeg" data-label="Settings">
+              <img src="images/todo/setting.jpeg" alt="Settings"/>
+            </div>
+            <div class="screenshot-caption">Settings</div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- FEATURES -->
+      <section class="proj-section">
+        <div class="proj-section-label">Features</div>
+        <h2 class="proj-section-title">Key <span class="gold">Capabilities</span></h2>
+        <div class="features-grid">
+          <div class="feature-card"><div class="feature-icon">🔐</div><div class="feature-title">Firebase Auth</div><div class="feature-desc">Full registration, email verification, login, and onboarding flow using Firebase Authentication.</div></div>
+          <div class="feature-card"><div class="feature-icon">✅</div><div class="feature-title">Task Management</div><div class="feature-desc">Add, edit, delete, and mark tasks complete with a clean, responsive interface.</div></div>
+          <div class="feature-card"><div class="feature-icon">📅</div><div class="feature-title">Calendar Picker</div><div class="feature-desc">Assign due dates to tasks using an integrated calendar date picker widget.</div></div>
+          <div class="feature-card"><div class="feature-icon">🌙</div><div class="feature-title">Dark / Light Mode</div><div class="feature-desc">Full theme switching persisted via Shared Preferences.</div></div>
+          <div class="feature-card"><div class="feature-icon">🌍</div><div class="feature-title">Localization</div><div class="feature-desc">Full English and Arabic support with RTL layout handling using Flutter intl.</div></div>
+          <div class="feature-card"><div class="feature-icon">⚙️</div><div class="feature-title">Provider State Mgmt</div><div class="feature-desc">Clean state management with efficient rebuilds and separation of UI from logic.</div></div>
+        </div>
+      </section>
+
+      <!-- TECH STACK -->
+      <section class="proj-section">
+        <div class="proj-section-label">Tech Stack</div>
+        <h2 class="proj-section-title">Technologies <span class="gold">Used</span></h2>
+        <div class="tech-grid">
+          <div class="tech-chip">Flutter & Dart</div>
+          <div class="tech-chip">Firebase Authentication</div>
+          <div class="tech-chip">Cloud Firestore</div>
+          <div class="tech-chip">Provider</div>
+          <div class="tech-chip">Shared Preferences</div>
+          <div class="tech-chip">Flutter Localization</div>
+          <div class="tech-chip">Custom UI Design</div>
+          <div class="tech-chip">Clean Architecture</div>
+        </div>
+      </section>
+
+      <div class="proj-footer-cta">
+        <a href="https://github.com/fadyeshak1/todo_app" target="_blank" class="btn-gold">View on GitHub ↗</a>
+        <a href="index.html#projects" class="btn-ghost">← All Projects</a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Lightbox: clicking any screenshot opens the full image -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt=""/>
+    <div class="lightbox-placeholder" id="lightboxPlaceholder" style="display:none;">
+      <div class="lightbox-placeholder-icon">📱</div>
+      <div class="lightbox-placeholder-title" id="lightboxLabel">Screenshot</div>
+      <div class="lightbox-placeholder-hint">Filename: <code id="lightboxFilename"></code></div>
+    </div>
+  </div>
+
+  <script src="project-script.js"></script>
+</body>
+</html>

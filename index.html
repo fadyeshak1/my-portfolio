@@ -48,9 +48,8 @@
           <a href="#contact" class="btn-ghost">Get In Touch</a>
         </div>
         <div class="hero-stats">
-          <div><div class="stat-num">3+</div><div class="stat-label">Apps Built</div></div>
-          <div><div class="stat-num">2+</div><div class="stat-label">Years Coding</div></div>
-          <div><div class="stat-num">3.0</div><div class="stat-label">GPA / 4.0</div></div>
+          <div><div class="stat-num">4+</div><div class="stat-label">Apps Built</div></div>
+          <div><div class="stat-num">3+</div><div class="stat-label">Years Coding</div></div>
         </div>
       </div>
 
@@ -64,9 +63,9 @@
             1. Save your image as "profile.jpg" (or .png)
             2. Place it in the same folder as index.html
             3. Replace the <div class="hero-photo-placeholder"> below with:
-               <img src="profile.jpg" alt="Fady Eshak" />
+               
           -->
-          <img src="images/profile.jpeg" alt="Fady Eshak" />
+         <img src="images/profile.jpeg" alt="Fady Eshak" />
         </div>
         <div class="hero-photo-badge">
           <span>◆</span> Available
@@ -129,13 +128,17 @@
             <div class="exp-company">Route IT Training Center — Egypt</div>
             <div class="exp-date">Feb 2025</div>
           </div>
-          <div class="exp-role">Flutter Intern</div>
+          <div class="exp-role">Flutter Developer Intern</div>
           <ul class="exp-bullets">
-            <li>Completed a professional diploma in Flutter mobile development.</li>
-            <li>Developed and deployed production-level apps: Islami App, To-Do App, News App, and Movies App.</li>
-            <li>Worked closely with fellow interns to implement shared components and conduct peer reviews.</li>
-            <li>Implemented local & cloud-based auth, storage, and notifications using Firebase and Supabase.</li>
-            <li>Applied clean architecture, async programming, and app localization for scalability and UX.</li>
+            <li>Completed a professional diploma in Flutter mobile development, building scalable cross-platform applications using Dart and Flutter.</li>
+            <li>Developed multiple real-world applications including Islami App, To-Do App, News App, and Movies App.</li>
+            <li>Designed responsive and modern UI/UX interfaces following Flutter Material design principles.</li>
+            <li>Implemented REST API integration for dynamic data retrieval and real-time content updates.</li>
+            <li>Integrated Firebase services including Authentication, Cloud Firestore, Storage, and Push Notifications.</li>
+            <li>Built modular and maintainable apps using Clean Architecture, reusable widgets, and state management concepts.</li>
+            <li>Applied asynchronous programming (Future, async/await) to handle network requests and background operations efficiently.</li>
+            <li>Implemented localization, theme management, and persistent storage to improve user experience.</li>
+            <li>Collaborated with other interns in code reviews, debugging, and shared UI components.</li>
           </ul>
         </div>
 
@@ -144,11 +147,12 @@
             <div class="exp-company">October 6 University — Egypt</div>
             <div class="exp-date">2023 – 2024</div>
           </div>
-          <div class="exp-role">Academic Projects — C++ & Java</div>
+          <div class="exp-role">Academic Software Development Projects</div>
           <ul class="exp-bullets">
-            <li>Developed console-based applications: Student Management System and Banking System.</li>
-            <li>Applied OOP principles: inheritance, polymorphism, and encapsulation.</li>
-            <li>Focused on writing clean, efficient code and strengthening problem-solving skills.</li>
+            <li>Developed console-based systems including Student Management System and Banking System using C++ and Java.</li>
+            <li>Applied Object-Oriented Programming (OOP) principles such as inheritance, polymorphism, and encapsulation.</li>
+            <li>Practiced algorithmic thinking and data structures to build efficient and maintainable solutions.</li>
+            <li>Focused on improving problem-solving skills and clean code practices.</li>
           </ul>
         </div>
 
@@ -164,31 +168,22 @@
       <div class="projects-grid">
 
         <!-- Project 01: Blood Donation -->
-        <div class="project-card reveal reveal-delay-1">
+        <div class="project-card reveal reveal-delay-1" onclick="window.location.href='project-blood.html'" style="cursor:pointer;">
           <div class="project-head">
             <div class="project-num">01</div>
             <div class="project-links">
-              <a href="https://github.com/fadyeshak1/blood_donation" target="_blank" class="project-link">
+              <a href="https://github.com/fadyeshak1/blood_donation" target="_blank" class="project-link" onclick="event.stopPropagation()">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57
-                  0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695
-                  -.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99
-                  .105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225
-                  -.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405
-                  c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225
-                  0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3
-                  0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
                 </svg>
               </a>
+              <a href="project-blood.html" class="project-link" title="Details" onclick="event.stopPropagation()">↗</a>
             </div>
           </div>
           <div class="project-body">
             <div class="project-name">Blood Donation Platform</div>
             <div class="project-category">Flutter · AI-Powered · Healthcare</div>
-            <div class="project-desc">
-              An intelligent digital ecosystem connecting donors, seekers, and hospitals. Features AI-driven
-              donor matching, real-time emergency alerts, QR verification, and a hospital management dashboard.
-            </div>
+            <div class="project-desc">An intelligent digital ecosystem connecting donors, seekers, and hospitals. Features AI-driven donor matching, real-time emergency alerts, QR verification, and a hospital management dashboard.</div>
             <ul class="project-features">
               <li>AI-powered donor–seeker matching by blood type & location</li>
               <li>QR Code system for secure donation verification</li>
@@ -207,31 +202,22 @@
         </div>
 
         <!-- Project 02: To-Do App -->
-        <div class="project-card reveal reveal-delay-2">
+        <div class="project-card reveal reveal-delay-2" onclick="window.location.href='project-todo.html'" style="cursor:pointer;">
           <div class="project-head">
             <div class="project-num">02</div>
             <div class="project-links">
-              <a href="https://github.com/fadyeshak1/todo_app" target="_blank" class="project-link">
+              <a href="https://github.com/fadyeshak1/todo_app" target="_blank" class="project-link" onclick="event.stopPropagation()">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57
-                  0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695
-                  -.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99
-                  .105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225
-                  -.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405
-                  c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225
-                  0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3
-                  0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
                 </svg>
               </a>
+              <a href="project-todo.html" class="project-link" title="Details" onclick="event.stopPropagation()">↗</a>
             </div>
           </div>
           <div class="project-body">
             <div class="project-name">To-Do App</div>
             <div class="project-category">Flutter · Firebase · Productivity</div>
-            <div class="project-desc">
-              A modern productivity app with full Firebase authentication, task management system,
-              dark/light mode, and English & Arabic localization for a seamless experience.
-            </div>
+            <div class="project-desc">A modern productivity app with full Firebase authentication, task management system, dark/light mode, and English & Arabic localization for a seamless experience.</div>
             <ul class="project-features">
               <li>Firebase authentication with email verification & onboarding</li>
               <li>Full task CRUD: add, edit, delete, mark complete</li>
@@ -249,31 +235,22 @@
         </div>
 
         <!-- Project 03: Metro Misr -->
-        <div class="project-card reveal reveal-delay-3">
+        <div class="project-card reveal reveal-delay-3" onclick="window.location.href='project-metro.html'" style="cursor:pointer;">
           <div class="project-head">
             <div class="project-num">03</div>
             <div class="project-links">
-              <a href="https://github.com/fadyeshak1/metro_misr" target="_blank" class="project-link">
+              <a href="https://github.com/fadyeshak1/metro_misr" target="_blank" class="project-link" onclick="event.stopPropagation()">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57
-                  0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695
-                  -.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99
-                  .105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225
-                  -.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405
-                  c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225
-                  0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3
-                  0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
                 </svg>
               </a>
+              <a href="project-metro.html" class="project-link" title="Details" onclick="event.stopPropagation()">↗</a>
             </div>
           </div>
           <div class="project-body">
             <div class="project-name">Metro Misr</div>
             <div class="project-category">Flutter · GPS · Navigation</div>
-            <div class="project-desc">
-              A smart Cairo Metro navigation app helping commuters browse all metro lines, plan trips
-              between stations, and detect the nearest station via GPS for effortless daily commuting.
-            </div>
+            <div class="project-desc">A smart Cairo Metro navigation app helping commuters browse all metro lines, plan trips between stations, and detect the nearest station via GPS for effortless daily commuting.</div>
             <ul class="project-features">
               <li>All Cairo Metro lines and stations displayed accurately</li>
               <li>Trip planning with station count & route calculation</li>
@@ -301,41 +278,152 @@
       <h2 class="section-title reveal">Academic <span class="gold">Background</span></h2>
       <div class="edu-grid">
 
+        <!-- University Degree -->
         <div class="edu-card reveal reveal-delay-1">
           <span class="edu-icon">🎓</span>
           <div class="edu-school">October 6 University (O6U)</div>
-          <div class="edu-degree">B.Sc. Computer Science & Info Systems · Sep 2022 – Jun 2026</div>
-          <div class="edu-detail">Specialization: Computer Networks, Routing & Switching, Network Automation, Cybersecurity</div>
-          <div class="edu-gpa">GPA: 3.0 / 4.0</div>
+          <div class="edu-degree">B.Sc. Computer Science & Information Systems · Sep 2022 – Jun 2026</div>
+          <div class="edu-detail">Egypt, Cairo</div>
           <div class="coursework">
             <span class="course-tag">Mobile App Dev</span>
             <span class="course-tag">OOP</span>
-            <span class="course-tag">Data Structures</span>
-            <span class="course-tag">Algorithms</span>
+            <span class="course-tag">Data Structures & Algorithms</span>
             <span class="course-tag">DBMS</span>
-            <span class="course-tag">Software Eng.</span>
-            <span class="course-tag">OS</span>
-            <span class="course-tag">Java</span>
-            <span class="course-tag">C++</span>
-            <span class="course-tag">Firebase</span>
-            <span class="course-tag">HTML & CSS</span>
+            <span class="course-tag">Software Engineering</span>
+            <span class="course-tag">Operating Systems</span>
+            <span class="course-tag">Computer Networks</span>
+            <span class="course-tag">Cybersecurity Fundamentals</span>
+            <span class="course-tag">System Administration</span>
+            <span class="course-tag">Network Automation</span>
+            <span class="course-tag">Routing & Switching</span>
+            <span class="course-tag">Cloud Computing</span>
+            <span class="course-tag">Wireless System Administration</span>
+            <span class="course-tag">Mobile Networks</span>
           </div>
         </div>
 
+        <!-- Flutter Diploma -->
         <div class="edu-card reveal reveal-delay-2">
-          <span class="edu-icon">📜</span>
+          <span class="edu-icon">📱</span>
           <div class="edu-school">Route IT Training Center</div>
-          <div class="edu-degree">Flutter Mobile Development Diploma · Feb 2025</div>
-          <div class="edu-detail">
-            Professional diploma covering Flutter from fundamentals to production-level development.
-            Built and deployed multiple real-world apps with clean architecture, Firebase, Supabase,
-            and app localization.
+          <div class="edu-degree">Flutter Mobile Development Diploma · Feb 2025 · Egypt</div>
+          <div class="edu-detail">Professional training focused on building production-ready mobile applications using Flutter and Dart.</div>
+          <div class="coursework">
+            <span class="course-tag">Flutter UI & Responsive Design</span>
+            <span class="course-tag">Dart</span>
+            <span class="course-tag">Widget Architecture</span>
+            <span class="course-tag">State Management</span>
+            <span class="course-tag">Firebase Integration</span>
+            <span class="course-tag">REST API</span>
+            <span class="course-tag">Navigation & Routing</span>
+            <span class="course-tag">Local Storage</span>
+            <span class="course-tag">Localization</span>
+            <span class="course-tag">Performance & Debugging</span>
           </div>
+        </div>
+
+        <!-- HCIA Cloud -->
+        <div class="edu-card reveal reveal-delay-3">
+          <span class="edu-icon">☁️</span>
+          <div class="edu-school">Huawei ICT Academy</div>
+          <div class="edu-degree">HCIA – Cloud Computing · 2025</div>
+          <div class="edu-detail">Training covering cloud architecture fundamentals, virtualization technologies, cloud storage and networking, and cloud service management and deployment models.</div>
+        </div>
+
+        <!-- CIB Program -->
+        <div class="edu-card reveal reveal-delay-4">
+          <span class="edu-icon">🏦</span>
+          <div class="edu-school">Commercial International Bank (CIB)</div>
+          <div class="edu-degree">CIB Summer Program – The Green Leap · 2025</div>
+          <div class="edu-detail">Program focused on sustainable finance and ESG principles, innovation technologies including AI and data-driven systems, and leadership, adaptability, and professional development.</div>
         </div>
 
       </div>
+
+      <!-- ── CERTIFICATES ── -->
+      <div class="cert-section reveal">
+        <div class="cert-title">
+          <span class="section-eyebrow" style="margin-bottom:0;">Certificates</span>
+        </div>
+        <div class="cert-grid">
+
+          <!-- Certificate 1: Route IT -->
+          <div class="cert-card" onclick="openCertModal(0)">
+            <div class="cert-icon">📜</div>
+            <div class="cert-info">
+              <div class="cert-name">Flutter Mobile Development Diploma</div>
+              <div class="cert-issuer">Route IT Training Center · 2025</div>
+            </div>
+            <div class="cert-arrow">→</div>
+          </div>
+
+          <!-- Certificate 2: HCIA -->
+          <div class="cert-card" onclick="openCertModal(1)">
+            <div class="cert-icon">🏅</div>
+            <div class="cert-info">
+              <div class="cert-name">HCIA – Cloud Computing</div>
+              <div class="cert-issuer">Huawei ICT Academy · 2025</div>
+            </div>
+            <div class="cert-arrow">→</div>
+          </div>
+
+          <!-- Certificate 3: CIB -->
+          <div class="cert-card" onclick="openCertModal(2)">
+            <div class="cert-icon">🌿</div>
+            <div class="cert-info">
+              <div class="cert-name">CIB Summer Program – The Green Leap</div>
+              <div class="cert-issuer">Commercial International Bank · 2025</div>
+            </div>
+            <div class="cert-arrow">→</div>
+          </div>
+
+        </div>
+      </div>
+
     </div>
   </section>
+
+  <!-- ── CERTIFICATE MODAL ── -->
+  <!--
+    HOW TO ADD YOUR CERTIFICATE IMAGES:
+    ──────────────────────────────────────────────────
+    For each certificate below:
+    1. Save your certificate image in the same folder as index.html
+       - Route IT diploma  → cert-route.jpg
+       - HCIA certificate  → cert-hcia.jpg
+       - CIB certificate   → cert-cib.jpg
+    2. Find the matching panel below (id="cert-route-panel" etc.)
+    3. Inside that panel, DELETE the <div class="cert-placeholder"> block
+    4. UNCOMMENT the <img> tag below it
+    Each certificate opens its OWN separate viewer when clicked.
+    ──────────────────────────────────────────────────
+  -->
+  <div class="cert-modal" id="certModal" onclick="closeCertModal(event)">
+    <div class="cert-modal-inner">
+      <button class="cert-modal-close" onclick="closeCertModal()">✕</button>
+
+      <div class="cert-modal-header">
+        <div class="cert-modal-name" id="certModalName">Certificate</div>
+        <div class="cert-modal-issuer" id="certModalIssuer">Issuer</div>
+      </div>
+
+      <!-- ── Route IT Certificate Panel ── -->
+      <div class="cert-img-panel" id="cert-route-panel">
+        <img src="images/routeit.jpg" alt="Flutter Mobile Development Diploma – Route IT"/>
+      </div>
+
+      <!-- ── HCIA Certificate Panel ── -->
+      <div class="cert-img-panel" id="cert-hcia-panel" style="display:none;">
+        <img src="images/hcia.jpg" alt="HCIA Cloud Computing – Huawei ICT Academy"/>
+      </div>
+
+      <!-- ── CIB Certificate Panel ── -->
+      <div class="cert-img-panel" id="cert-cib-panel" style="display:none;">
+        <img src="images/cib.jpg" alt="CIB Summer Program – The Green Leap"/>
+      </div>
+
+    </div>
+  </div>
 
   <!-- ── CONTACT ── -->
   <section id="contact">
