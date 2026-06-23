@@ -7,6 +7,35 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css"/>
   <link rel="stylesheet" href="project.css"/>
+
+  <!-- Clean phone-mockup gallery (overrides for the Screenshots section) -->
+  <style>
+    .screens-showcase {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1.4rem;
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+    .screen-item {
+      display: flex; flex-direction: column;
+      align-items: center; gap: .9rem;
+    }
+    /* Reuse .phone-frame styling but let it fill the grid cell */
+    .screens-showcase .phone-frame {
+      width: 100%;
+      border-radius: 24px;
+    }
+    @media (max-width: 1100px) {
+      .screens-showcase { grid-template-columns: repeat(3, 1fr); max-width: 700px; }
+    }
+    @media (max-width: 760px) {
+      .screens-showcase { grid-template-columns: repeat(2, 1fr); max-width: 480px; }
+    }
+    @media (max-width: 520px) {
+      .screens-showcase { grid-template-columns: 1fr; max-width: 230px; }
+    }
+  </style>
 </head>
 <body>
 
@@ -26,7 +55,7 @@
       <h1 class="proj-title">Blood Donation<em>Smart Platform</em></h1>
       <p class="proj-subtitle">An intelligent digital ecosystem connecting blood donors, seekers, and hospitals — powered by AI-driven matching, QR verification, and real-time emergency alerts.</p>
       <div class="proj-tags">
-        <span class="tag">Flutter</span><span class="tag">Firebase</span>
+        <span class="tag">Flutter</span>
         <span class="tag">AI / ML</span><span class="tag">QR Code</span>
         <span class="tag">Real-time</span><span class="tag">Dart</span>
       </div>
@@ -39,24 +68,27 @@
     <div class="proj-hero-right">
       <div class="phone-mockup-row">
 
-        <div class="phone-frame" data-img="images/blood/home.jpeg" data-label="Home Screen">
+        <!-- Home Dashboard Screenshot -->
+        <div class="phone-frame" data-img="assets/images/home.png" data-label="Home Dashboard">
           <div class="phone-notch"></div>
           <div class="phone-screen">
-            <img src="images/blood/home.jpeg" alt="Home Screen"/>
+            <img src="images/blood/home.jpeg" alt="Home Dashboard"/>
           </div>
         </div>
 
-        <div class="phone-frame phone-main" data-img="images/blood/donor.jpeg" data-label="Donor Matching">
-          <div class="phone-notch"></div>
-          <div class="phone-screen">
-            <img src="images/blood/donor.jpeg" alt="Donor Matching"/>
-          </div>
-        </div>
-
-        <div class="phone-frame" data-img="images/blood/qrcode.jpeg" data-label="QR Verification">
+        <!-- QR Verification Screenshot (signature feature — center / main phone) -->
+        <div class="phone-frame phone-main" data-img="assets/images/qr_verification.png" data-label="QR Verification">
           <div class="phone-notch"></div>
           <div class="phone-screen">
             <img src="images/blood/qrcode.jpeg" alt="QR Verification"/>
+          </div>
+        </div>
+
+        <!-- Create Blood Request Screenshot -->
+        <div class="phone-frame" data-img="assets/images/create_request.png" data-label="Create Blood Request">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <img src="images/blood/createblood.jpeg" alt="Create Blood Request"/>
           </div>
         </div>
 
@@ -94,34 +126,61 @@
       <section class="proj-section">
         <div class="proj-section-label">Screenshots</div>
         <h2 class="proj-section-title">App <span class="gold">Screenshots</span></h2>
-        <div class="all-screenshots">
+        <div class="screens-showcase">
 
-          <div class="screenshot-item">
-            <div class="screenshot-frame" data-img="images/blood/home.jpeg" data-label="Home / Dashboard">
-              <img src="images/blood/home.jpeg" alt="Home Dashboard"/>
+          <!-- Home Dashboard Screenshot -->
+          <div class="screen-item">
+            <div class="phone-frame" data-img="assets/images/home.png" data-label="Home Dashboard">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <img src="images/blood/home.jpeg" alt="Home Dashboard"/>
+              </div>
             </div>
-            <div class="screenshot-caption">Home / Dashboard</div>
+            <div class="screenshot-caption">Home Dashboard</div>
           </div>
 
-          <div class="screenshot-item">
-            <div class="screenshot-frame" data-img="images/blood/donor.jpeg" data-label="Donor Form">
-              <img src="images/blood/donor.jpeg" alt="Donor Form"/>
+          <!-- Blood Requests List Screenshot -->
+          <div class="screen-item">
+            <div class="phone-frame" data-img="assets/images/requests.png" data-label="Blood Requests List">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <img src="images/blood/request (2).jpeg" alt="Blood Requests List"/>
+              </div>
             </div>
-            <div class="screenshot-caption">Donor Form</div>
+            <div class="screenshot-caption">Blood Requests List</div>
           </div>
 
-          <div class="screenshot-item">
-            <div class="screenshot-frame" data-img="images/blood/request.jpeg" data-label="Blood Request">
-              <img src="images/blood/request.jpeg" alt="Blood Request"/>
+          <!-- Create Blood Request Screenshot -->
+          <div class="screen-item">
+            <div class="phone-frame" data-img="assets/images/create_request.png" data-label="Create Blood Request">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <img src="images/blood/createblood.jpeg" alt="Create Blood Request"/>
+              </div>
             </div>
-            <div class="screenshot-caption">Blood Request</div>
+            <div class="screenshot-caption">Create Blood Request</div>
           </div>
 
-          <div class="screenshot-item">
-            <div class="screenshot-frame" data-img="images/blood/qrcode.jpeg" data-label="QR Verification">
-              <img src="images/blood/qrcode.jpeg" alt="QR Verification"/>
+          <!-- QR Verification Screenshot -->
+          <div class="screen-item">
+            <div class="phone-frame" data-img="assets/images/qr_verification.png" data-label="QR Verification">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <img src="images/blood/qrcode.jpeg" alt="QR Verification"/>
+              </div>
             </div>
             <div class="screenshot-caption">QR Verification</div>
+          </div>
+
+          <!-- Rewards System Screenshot -->
+          <div class="screen-item">
+            <div class="phone-frame" data-img="assets/images/rewards.png" data-label="Rewards System">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <img src="images/blood/reward.jpeg" alt="Rewards System"/>
+              </div>
+            </div>
+            <div class="screenshot-caption">Rewards System</div>
           </div>
 
         </div>
@@ -137,6 +196,7 @@
           <div class="feature-card"><div class="feature-icon">🏆</div><div class="feature-title">Reward Points</div><div class="feature-desc">Gamified reward system to encourage regular blood donation with points and recognition.</div></div>
           <div class="feature-card"><div class="feature-icon">🏥</div><div class="feature-title">Hospital Dashboard</div><div class="feature-desc">Real-time blood inventory monitoring, donation management, and AI demand prediction charts.</div></div>
           <div class="feature-card"><div class="feature-icon">📊</div><div class="feature-title">Demand Prediction</div><div class="feature-desc">Uses historical hospital data to forecast future blood demand using AI/ML concepts.</div></div>
+          <div class="feature-card"><div class="feature-icon">📋</div><div class="feature-title">Status Tracking</div><div class="feature-desc">Full donation & request history — each entry moves through pending, confirmed, completed, and cancelled states with dates and units recorded.</div></div>
         </div>
       </section>
 
@@ -145,11 +205,11 @@
         <h2 class="proj-section-title">Technologies <span class="gold">Used</span></h2>
         <div class="tech-grid">
           <div class="tech-chip">Flutter & Dart</div>
-          <div class="tech-chip">Firebase Auth</div>
-          <div class="tech-chip">Cloud Firestore</div>
+          <div class="tech-chip">Provider</div>
           <div class="tech-chip">Push Notifications</div>
-          <div class="tech-chip">AI / ML Concepts</div>
-          <div class="tech-chip">QR Code System</div>
+          <div class="tech-chip">AI-based donor matching</div>
+          <div class="tech-chip">QR Code verification</div>
+          <div class="tech-chip">chatbot assistant</div>
           <div class="tech-chip">REST APIs</div>
           <div class="tech-chip">Clean Architecture</div>
         </div>
