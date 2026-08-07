@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YumUp – Fady Eshak</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="project.css"/>
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <nav class="project-nav">
+    <a href="index.html" class="back-btn">← Back to Portfolio</a>
+    <span class="project-nav-title">YumUp</span>
+    <a href="https://github.com/fadyeshak1/yumup-new" target="_blank" class="btn-ghost-sm">GitHub ↗</a>
+  </nav>
+
+  <div class="proj-hero">
+    <div class="proj-hero-left">
+      <div class="proj-num">02</div>
+      <div class="proj-eyebrow">Food & Restaurant Discovery · Flutter </div>
+      <h1 class="proj-title">Yum<em>Up</em></h1>
+      <p class="proj-subtitle">
+        YumUp is a Flutter mobile app that helps users discover meals and restaurants through smart categories, ratings, and personalized recommendations — all in one seamless, modern experience.
+      </p>
+      <div class="proj-tags">
+        <span class="tag">Flutter</span>
+        <span class="tag">Dart</span>
+        <span class="tag">Supabase</span>
+        <span class="tag">Bloc/Cubit</span>
+        <span class="tag">Clean Architecture</span>
+      </div>
+      <div class="proj-hero-links">
+        <a href="https://github.com/fadyeshak1/yumup-new" target="_blank" class="btn-gold">View on GitHub ↗</a>
+        <a href="index.html#projects" class="btn-ghost">← All Projects</a>
+      </div>
+    </div>
+
+    <div class="proj-hero-right">
+      <div class="phone-mockup-row">
+
+        <!-- Hero Phone 1: Home -->
+        <div class="phone-frame" data-img="images/yumup/screenshot1.png" data-label="Home Screen">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <img src="images/yumup/hrome.jpeg" alt="Home Screen"/>
+          </div>
+        </div>
+
+        <!-- Hero Phone 2 (main/center): Restaurant & Meal Details -->
+        <div class="phone-frame phone-main" data-img="images/yumup/screenshot2.png" data-label="Restaurant & Meal Details">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <img src="images/yumup/meal.jpeg" alt="Restaurant & Meal Details"/>
+          </div>
+        </div>
+
+        <!-- Hero Phone 3: Favorites & History -->
+        <div class="phone-frame" data-img="images/yumup/screenshot3.png" data-label="Favorites & History">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <img src="images/yumup/history.jpeg" alt="Favorites & History"/>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="proj-stats-bar">
+    <div class="proj-stat"><div class="proj-stat-num">Supabase</div><div class="proj-stat-label">Backend</div></div>
+    <div class="proj-stat"><div class="proj-stat-num">Clean Arch</div><div class="proj-stat-label">Architecture</div></div>
+    <div class="proj-stat"><div class="proj-stat-num">Dark Mode</div><div class="proj-stat-label">UI</div></div>
+  </div>
+  <main class="proj-main">
+    <div class="proj-content-wrap">
+
+      <!-- OVERVIEW -->
+      <section class="proj-section">
+        <div class="proj-section-label">Overview</div>
+        <h2 class="proj-section-title">About the <span class="gold">Project</span></h2>
+        <div class="proj-overview">
+          <div class="proj-overview-text">
+            <p>YumUp is a Flutter mobile application built to solve a simple everyday problem: users waste time deciding what to eat because restaurant information is scattered and there's no personalized way to compare options. YumUp brings restaurant browsing, meal details, ratings, and personalized recommendations into one clean, modern app.</p>
+            <p>The app is built with Clean Architecture and the Bloc/Cubit pattern for scalable, testable state management, and uses Supabase as a cloud backend for authentication, realtime database, and storage — handling all data persistence and user management.</p>
+            <p>Users can browse restaurants by category or search, view full meal details with photos and ingredients, rate and review meals, save their favorites, revisit their order history, and submit suggestions for new restaurants — all wrapped in a responsive, elegant dark-themed UI.</p>
+          </div>
+          <div class="proj-overview-aside">
+            <div class="aside-card">
+              <div class="aside-card-title">Smart Discovery</div>
+              <p>Browse restaurants and meals by category, cuisine, or popularity, with a powerful search bar for fast food discovery.</p>
+            </div>
+            <div class="aside-card">
+              <div class="aside-card-title">Ratings & Reviews</div>
+              <p>Users can rate meals and submit detailed reviews to help the community make smarter dining decisions.</p>
+            </div>
+            <div class="aside-card">
+              <div class="aside-card-title">Clean Architecture</div>
+              <p>Built with Bloc/Cubit state management and a repository layer that decouples business logic from the Supabase backend.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SCREENSHOTS -->
+      <section class="proj-section">
+        <div class="proj-section-label">Screenshots</div>
+        <h2 class="proj-section-title">App <span class="gold">Screenshots</span></h2>
+        <div class="all-screenshots">
+
+          <!-- Screenshot 1: Home -->
+          <div class="screenshot-item">
+            <div class="screenshot-frame" data-img="images/yumup/screenshot1.png" data-label="Home Screen">
+              <img src="images/yumup/hrome.jpeg" alt="Home Screen"/>
+            </div>
+            <div class="screenshot-caption">Home Screen</div>
+          </div>
+
+          <!-- Screenshot 2: Restaurant & Meal Details -->
+          <div class="screenshot-item">
+            <div class="screenshot-frame" data-img="images/yumup/screenshot2.png" data-label="Restaurant & Meal Details">
+              <img src="images/yumup/meal.jpeg" alt="Restaurant & Meal Details"/>
+            </div>
+            <div class="screenshot-caption">Restaurant & Meal Details</div>
+          </div>
+
+          <!-- Screenshot 3: Favorites & History -->
+          <div class="screenshot-item">
+            <div class="screenshot-frame" data-img="images/yumup/screenshot3.png" data-label="Favorites & History">
+              <img src="images/yumup/favorites.jpeg" alt="Favorites & History"/>
+            </div>
+            <div class="screenshot-caption">Favorites & History</div>
+          </div>
+
+          <!-- Screenshot 4: Profile & Settings -->
+          <div class="screenshot-item">
+            <div class="screenshot-frame" data-img="images/yumup/screenshot4.png" data-label="Profile & Settings">
+              <img src="images/yumup/profile.jpeg" alt="Profile & Settings"/>
+            </div>
+            <div class="screenshot-caption">Profile & Settings</div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- FEATURES -->
+      <section class="proj-section">
+        <div class="proj-section-label">Features</div>
+        <h2 class="proj-section-title">Key <span class="gold">Capabilities</span></h2>
+        <div class="features-grid">
+          <div class="feature-card"><div class="feature-icon">🍽</div><div class="feature-title">Restaurant Browsing</div><div class="feature-desc">Explore nearby restaurants with ratings, categories, and detailed info in a clean, intuitive interface.</div></div>
+          <div class="feature-card"><div class="feature-icon">🔍</div><div class="feature-title">Smart Search & Categories</div><div class="feature-desc">Find food fast with powerful search and category filters tailored to user preferences.</div></div>
+          <div class="feature-card"><div class="feature-icon">⭐</div><div class="feature-title">Ratings & Reviews</div><div class="feature-desc">Rate meals and submit detailed reviews with star indicators and comment threads.</div></div>
+          <div class="feature-card"><div class="feature-icon">❤️</div><div class="feature-title">Favorites & History</div><div class="feature-desc">Save preferred meals and restaurants, and revisit order history anytime.</div></div>
+          <div class="feature-card"><div class="feature-icon">🌙</div><div class="feature-title">Dark Mode UI</div><div class="feature-desc">Elegant dark theme across the entire app for a modern, comfortable experience.</div></div>
+          <div class="feature-card"><div class="feature-icon">⚙️</div><div class="feature-title">Clean Architecture</div><div class="feature-desc">Bloc/Cubit state management with a repository layer decoupling business logic from Supabase.</div></div>
+        </div>
+      </section>
+
+      <!-- TECH STACK -->
+      <section class="proj-section">
+        <div class="proj-section-label">Tech Stack</div>
+        <h2 class="proj-section-title">Technologies <span class="gold">Used</span></h2>
+        <div class="tech-grid">
+          <div class="tech-chip">Flutter & Dart</div>
+          <div class="tech-chip">Supabase (Auth, Realtime DB, Storage)</div>
+          <div class="tech-chip">Bloc / Cubit</div>
+          <div class="tech-chip">Clean Architecture</div>
+          <div class="tech-chip">Repository Pattern</div>
+          <div class="tech-chip">Responsive UI</div>
+          <div class="tech-chip">Dark Mode</div>
+          <div class="tech-chip">GitHub</div>
+        </div>
+      </section>
+
+      <div class="proj-footer-cta">
+        <a href="https://github.com/fadyeshak1/yumup-new" target="_blank" class="btn-gold">View on GitHub ↗</a>
+        <a href="index.html#projects" class="btn-ghost">← All Projects</a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Lightbox: clicking any screenshot opens the full image -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt=""/>
+    <div class="lightbox-placeholder" id="lightboxPlaceholder" style="display:none;">
+      <div class="lightbox-placeholder-icon">📱</div>
+      <div class="lightbox-placeholder-title" id="lightboxLabel">Screenshot</div>
+      <div class="lightbox-placeholder-hint">Filename: <code id="lightboxFilename"></code></div>
+    </div>
+  </div>
+
+  <script src="project-script.js"></script>
+</body>
+</html>
